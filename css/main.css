@@ -1,0 +1,32 @@
+#header{background-color: black;
+height: 210px;
+}
+#h1{text-align: center;
+    color: red;
+    margin-top: 0;
+    padding-top: 90px;
+}
+
+#php{height: 1400px;
+background-color: gray;}
+
+#footer{background-color: black;
+height: 210px;
+margin-top: 1610px;}
+
+#h2{ text-align: center;
+color: red;
+margin-top: 1705px;
+}
+a{
+    color: red;}
+ p{
+    text-align: center;
+  }
+
+ #doss{
+     color: red;
+ }
+#fch {
+    color: white;
+}
