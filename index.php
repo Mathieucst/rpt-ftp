@@ -17,17 +17,18 @@
     <h1 id="h1">Répertoire mathieuc.FTP</h1>
 </header>
 
-<body id="php">
+<body id="body">
 
-
+<div id="php">
 
 <?php foreach ($dirs as $dir) { ?>
     <?php if (is_dir($base_url.$dir)) {?>
-        <p id="doss">dossier :<a href="<?=$dir?>"><?php echo $dir?></a> </p>
+        <p id="doss">dossier : <a href="<?=$dir?>"><?php echo $dir?></a> </p>
     <?php } else {?>
-        <p id="fch">fichier :<a href="<?=$dir?>"><?=$dir?></a> </p>
+        <p id="fch"> fichier :<a href="<?=$dir?>"><?=$dir?></a> </p>
     <?php }?>
 <?php }?>
+</div>
 
 </body>
 

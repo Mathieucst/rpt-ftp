@@ -7,28 +7,30 @@ height: 210px;
     padding-top: 90px;
 }
 
-#php{height: 1400px;
+#body{height: auto;
 background-color: gray;}
 
 #footer{background-color: black;
 height: 210px;
-margin-top: 1610px;}
+margin-top: auto;}
 
 #h2{ text-align: center;
 color: red;
-margin-top: 1705px;
+margin-top: auto;
 }
+#php{margin-top: 40px;
+margin-bottom: 40px;}
 a{
     color: red;}
  p{
     text-align: center;
-     font-size: 16px;
+     font-size: xx-large;
   }
 
  #doss{
      color: red;
  }
 #fch {
-    color: white;
+    color: blue;
 
 }
