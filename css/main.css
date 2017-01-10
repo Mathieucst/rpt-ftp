@@ -22,6 +22,7 @@ a{
     color: red;}
  p{
     text-align: center;
+     font-size: 16px;
   }
 
  #doss{
@@ -29,4 +30,5 @@ a{
  }
 #fch {
     color: white;
+
 }
