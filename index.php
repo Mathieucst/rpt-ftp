@@ -46,14 +46,18 @@
                     <?php } else {?>
 
                         <div class="bod">
+<!-----------------------------------------------------dossier---------------------------------------------------------------->
 
                             <?php if (isset($_GET['dossier'])) {?>
-                                <img  href=".php" src="img/fichimg.png" alt="fichier">
+                                <img  href=".php" src="img/dossimg.png" alt="dossier">
                                 <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?>
                                 </a><br>
 
+
+
                             <?php } else {?>
-                                <img  href=".php" src="img/fichimg.png" alt="fichier">
+
+                                <img  href=".php" src="img/dossimg.png" alt="fichier">
                                 <a class="doc" href="index.php?dossier=<?=$dir?>/"><?=$dir?>
                                     </a><br>
 
@@ -67,13 +71,17 @@
 
                     <div>
 
-                        <p><?=$dir;?></p>
+                        <p><img  href=".php" src="img/fichimg.png" alt="fichier">
+                            <a class="doc" href="index.php?dossier=<?=$dir?>/"><?=$dir?></p>
 
                     </div>
 
                 <?php }?>
 
             <?php endforeach;?>
+
+
+
 
         </div>
     </div>
