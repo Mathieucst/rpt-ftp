@@ -41,6 +41,7 @@
 #home{
     display: inline-block;
     vertical-align:middle ;
+    margin-top: 20px;
 }
 
 .nf{

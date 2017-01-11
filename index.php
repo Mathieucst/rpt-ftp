@@ -1,6 +1,6 @@
 <?php include("fonction.php");?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,6 +106,9 @@
                 <h2 id="h2">Home</h2>
 
                 <a href="index.php"><img  id="home" src="img/home.png" alt="home"></a>
+
+
+                </div>
             </div>
         </div>
     </div>
