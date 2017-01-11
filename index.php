@@ -42,8 +42,8 @@
                     <?php if ($dir == "..") {?>
 
                         <div class="bod">
-                            <img src="img/ret.png" alt="fichier">
-                            <a class="doc" href="index.php"><?=$dir?></a><br>
+                            <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><img src="img/ret.png" alt="fichier"></a>
+                            <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?></a><br>
 
                         </div>
 
@@ -54,7 +54,7 @@
                             <!-----------------------------------------------------dossier---------------------------------------------------------------->
 
                             <?php if (isset($_GET['dossier'])) {?>
-                                <img src="img/dossimg.png" alt="dossier">
+                                <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><img src="img/dossimg.png" alt="dossier"></a>
                                 <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?>
                                 </a><br>
 
@@ -62,7 +62,7 @@
 
                             <?php } else {?>
 
-                                <img src="img/dossimg.png" alt="fichier">
+                                <a href="index.php?dossier=<?=$dir?>/"><img src="img/dossimg.png" alt="fichier"></a>
                                 <a class="doc" href="index.php?dossier=<?=$dir?>/"><?=$dir?>
                                 </a><br>
 
@@ -103,9 +103,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-offset-6">
-                <h2 id="h2"  href="index.php">Home</h2>
+                <h2 id="h2">Home</h2>
 
-                <img  id="home" src="img/home.png" alt="home">
+                <a href="index.php"><img  id="home" src="img/home.png" alt="home"></a>
             </div>
         </div>
     </div>
