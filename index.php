@@ -13,18 +13,22 @@
     <script type="text/javascript" src="index.php"></script>
 
 </head>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
 
-            <header id="header">
+
+<body id="body">
+<header id="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+
                 <h1 id="h1">Répertoire mathieuc.FTP</h1>
-            </header>
 
+
+            </div>
         </div>
     </div>
-</div>
-<body id="body">
+</header>
 
 
 <div class="container-fluid">
@@ -38,18 +42,19 @@
                     <?php if ($dir == "..") {?>
 
                         <div class="bod">
-                            <img  href=".php" src="img/fichimg.png" alt="fichier">
+                            <img src="img/ret.png" alt="fichier">
                             <a class="doc" href="index.php"><?=$dir?></a><br>
 
                         </div>
 
-                    <?php } else {?>
+                    <?php } if( $dir != '.' && $dir != '..') { ?>
 
                         <div class="bod">
-<!-----------------------------------------------------dossier---------------------------------------------------------------->
+
+                            <!-----------------------------------------------------dossier---------------------------------------------------------------->
 
                             <?php if (isset($_GET['dossier'])) {?>
-                                <img  href=".php" src="img/dossimg.png" alt="dossier">
+                                <img src="img/dossimg.png" alt="dossier">
                                 <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?>
                                 </a><br>
 
@@ -57,9 +62,9 @@
 
                             <?php } else {?>
 
-                                <img  href=".php" src="img/dossimg.png" alt="fichier">
+                                <img src="img/dossimg.png" alt="fichier">
                                 <a class="doc" href="index.php?dossier=<?=$dir?>/"><?=$dir?>
-                                    </a><br>
+                                </a><br>
 
                             <?php }?>
 
@@ -69,9 +74,11 @@
 
                 <?php } else {?>
 
+                    <!---------------------------------------------------fichier------------------------------------------------------------------>
+
                     <div>
 
-                        <p><img  href=".php" src="img/fichimg.png" alt="fichier">
+                        <p><img src="img/fichimg.png" alt="fichier">
                             <a class="doc" href="index.php?dossier=<?=$dir?>/"><?=$dir?></p>
 
                     </div>
