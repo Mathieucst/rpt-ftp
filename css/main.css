@@ -1,59 +1,65 @@
-#header{background-color: black;
+#header{
+    background-color: black;
     height: auto;
 }
-#h1{text-align: center;
+
+#h1{
+    text-align: center;
     color: red;
     margin-top:0px;
     margin-bottom: 19px;
     padding-top: 70px;
 }
 
-#body{height: auto;
-    background-color: gray;}
+#body{
+    height: auto;
+    background-color: gray;
+}
 
-#footer{background-color: black;
+#footer{
+    background-color: black;
     height: 210px;
-    margin-top: auto;}
+    margin-top: auto;
+}
 
 #h2{
     color: white;
-    margin-top: auto;
+    margin-top:10px;
     font-size: xx-large;
 }
+
 #php{margin-top: auto;
-    margin-bottom: auto;}
+    margin-bottom: auto;
+}
 
 .img{
     position: relative;
     height: auto;
     width: auto;
-
-
 }
+
 #home{
     display: inline-block;
     vertical-align:middle ;
 }
 
-.nf{position: relative;
-
-}
-a{ color: white;
-
+.nf{
+    position: relative;
 }
 
+a{
+    color: white;
+}
 
 
-.bod{height: 100px;}
-/*.doc{*/
-    /*position: relative;*/
-    /*top: 20px;*/
-    /*left: -75px;*/
-/*}*/
 
-.nm{position: absolute;
+.bod{
+    height: 100px;
+}
+
+
+.nm{
+    position: absolute;
     left: auto;
     top: 20px;
-
-
 }
