@@ -108,11 +108,9 @@
                 <a href="index.php"><img  id="home" src="img/home.png" alt="home"></a>
 
 
-                </div>
             </div>
         </div>
     </div>
-
 </footer>
 
 </html>
