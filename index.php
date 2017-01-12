@@ -14,22 +14,18 @@
 
 </head>
 
-
 <body id="body">
 <header id="header">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
 
-
                 <h1 id="h1">Répertoire mathieuc.FTP</h1>
-
 
             </div>
         </div>
     </div>
 </header>
-
 
 <div class="container-fluid">
     <div class="row">
@@ -59,7 +55,6 @@
                                 </a><br>
 
 
-
                             <?php } else {?>
 
                                 <a href="index.php?dossier=<?=$dir?>/"><img src="img/dossimg.png" alt="fichier"></a>
@@ -81,14 +76,12 @@
                         <p><img src="img/fichimg.png" alt="fichier">
                             <a class="doc" href="index.php?dossier=<?=$dir?>/"><?=$dir?></p>
 
+                        <a class="doc" download='<?=$dir?>' href= http://mathieuc.marmier.codeur.online/<?=$_GET["dossier"].$dir?>>Télécharger <?=$dir;?></a>
                     </div>
 
                 <?php }?>
 
             <?php endforeach;?>
-
-
-
 
         </div>
     </div>
@@ -97,8 +90,6 @@
 
 </body>
 
-
-
 <footer id="footer">
     <div class="container-fluid">
         <div class="row">
@@ -106,7 +97,6 @@
                 <h2 id="h2">Home</h2>
 
                 <a href="index.php"><img  id="home" src="img/home.png" alt="home"></a>
-
 
             </div>
         </div>
