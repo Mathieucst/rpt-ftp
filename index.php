@@ -1,6 +1,6 @@
-<?php include("fonction.php");?>
 <!DOCTYPE html>
 <html lang="fr-FR">
+<?php include("fonction.php");?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,10 +8,10 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="js/main.js">
-    <link rel="stylesheet" href="js/jquery-3.1.1.slim.min.js">
-    <script type="text/javascript" src="index.php"></script>
 
+    <script type="text/javascript" src="index.php"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
 </head>
 
 <body id="body">
@@ -47,13 +47,12 @@
 
                         <div class="bod">
 
-                            <!-----------------------------------------------------dossier---------------------------------------------------------------->
+                    <!-----------------------------------------------------dossier---------------------------------------------------------------->
 
                             <?php if (isset($_GET['dossier'])) {?>
                                 <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><img src="img/dossimg.png" alt="dossier"></a>
                                 <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?>
                                 </a><br>
-
 
                             <?php } else {?>
 
@@ -68,15 +67,25 @@
                     <?php }?>
 
                 <?php } else {?>
+                                                                <!--******************************-->
 
-                    <!---------------------------------------------------fichier------------------------------------------------------------------>
+
+                    <!---------------------------------------------------fill------------------------------------------------------------------>
 
                     <div>
 
                         <p><img src="img/fichimg.png" alt="fichier">
-                            <a class="doc" href="index.php?dossier=<?=$dir?>/"><?=$dir?></p>
+                            <a class="doc" href="index.php?dossier=<?=$dir?>/"><?=$dir?>
 
-                        <a class="doc" download='<?=$dir?>' href= http://mathieuc.marmier.codeur.online/<?=$_GET["dossier"].$dir?>>Télécharger <?=$dir;?></a>
+                                <!--------------------------------------------------------download------------------------------------------------------------>
+
+                                <a class="down" download='<?=$dir?>' href= http://mathieuc.marmier.codeur.online/<?=$_GET["dossier"].$dir?>>Télécharger <?=$dir;?></a></p>
+
+                                                                <!--*******************************-->
+
+
+
+
                     </div>
 
                 <?php }?>
@@ -86,8 +95,7 @@
         </div>
     </div>
 </div>
-
-
+<div class="ajaxx"></div>
 </body>
 
 <footer id="footer">
@@ -102,5 +110,7 @@
         </div>
     </div>
 </footer>
+
+
 
 </html>
