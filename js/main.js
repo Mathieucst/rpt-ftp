@@ -1,6 +1,11 @@
 $(document).ready(function() {
-    console.log("pouet");
-    $(".doc").on("click", function(e){
+
+
+    $(document).on("click",".doc", function (e) {
+
+
+
+
         e.preventDefault();
         var $a = $(this);
         var adresse = $a.attr("href");
@@ -10,8 +15,11 @@ $(document).ready(function() {
             data: arr,
             url: "ajax.php",
             success : function(data){
-                $("#ajaxx").html(data);
+                $(".ajaxx").html(data);
+                console.log("pouet");
             }
         });
     });
 });
+
+

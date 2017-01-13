@@ -10,7 +10,7 @@ include("fonction.php");?>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 
 </head>
@@ -31,6 +31,7 @@ include("fonction.php");?>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-offset-6">
+            <div class="ajaxx">
 
             <?php foreach($dirs as $dir):?>
 
@@ -39,7 +40,7 @@ include("fonction.php");?>
                     <?php if ($dir == "..") {?>
                         <?php if (isset($_GET['dossier'])) {?>
                             <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><img src="img/ret.png" alt="dossier"></a>
-                            <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?>
+                            <a class="doc" href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?>
                             </a><br>
 
                         <?php } else {?>
@@ -60,7 +61,7 @@ include("fonction.php");?>
 
                             <?php if (isset($_GET['dossier'])) {?>
                                 <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><img src="img/dossimg.png" alt="dossier"></a>
-                                <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?>
+                                <a class="doc" href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?>
                                 </a><br>
 
                             <?php } else {?>
@@ -88,7 +89,7 @@ include("fonction.php");?>
 
                                 <!--------------------------------------------------------download------------------------------------------------------------>
 
-                                <a class="down" download='<?=$dir?>' href= http://mathieuc.marmier.codeur.online/<?=$_GET["dossier"].$dir?>>Télécharger <?=$dir;?></a></p>
+                                <a class="down" download='<?=$dir?>' href= http://mathieuc.marmier.codeur.online/<?=$_GET["dossier"]?><?=$dir?>>Télécharger <?=$dir;?></a></p>
 
                         <!--*******************************-->
 
@@ -104,9 +105,9 @@ include("fonction.php");?>
         </div>
     </div>
 </div>
-<div class="ajaxx"></div>
-</body>
 
+</body>
+</div>
 <footer id="footer">
     <div class="container-fluid">
         <div class="row">

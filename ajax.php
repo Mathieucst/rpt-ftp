@@ -1,3 +1,9 @@
+<?php $base_url = "/home/mathieuc/";
+if (isset($_GET['dossier'])) {
+    $base_url = $base_url.$_GET['dossier'];
+}
+$dirs = scandir($base_url);?>
+
 
 <?php foreach($dirs as $dir):?>
 
@@ -7,7 +13,7 @@
 
             <div class="bod">
                 <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><img src="img/ret.png" alt="fichier"></a>
-                <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?></a><br>
+                <a class="doc" href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?></a><br>
 
             </div>
 
@@ -19,7 +25,7 @@
 
                 <?php if (isset($_GET['dossier'])) {?>
                     <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><img src="img/dossimg.png" alt="dossier"></a>
-                    <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?>
+                    <a class="doc" href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?>
                     </a><br>
 
                 <?php } else {?>
@@ -60,4 +66,4 @@
 
 <?php endforeach;?>
 
-<script src="js/main.js"></script>
+<!--<script src="js/main.js"></script>-->
