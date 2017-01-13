@@ -1,4 +1,4 @@
-$(document).ready(function(e) {
+$(document).ready(function() {
     console.log("pouet");
     $(".doc").on("click", function(e){
         e.preventDefault();
