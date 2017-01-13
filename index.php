@@ -1,6 +1,8 @@
+<?php
+include("fonction.php");?>
 <!DOCTYPE html>
 <html lang="fr-FR">
-<?php include("fonction.php");?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,15 +10,14 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <script type="text/javascript" src="index.php"></script>
-    <script src="js/main.js"></script>
     <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/main.js"></script>
+
 </head>
 
 <body id="body">
 <header id="header">
-    <div class="container-fluid">
+        <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
 
@@ -36,12 +37,20 @@
                 <?php if (is_dir($base_url.$dir)){?>
 
                     <?php if ($dir == "..") {?>
+                        <?php if (isset($_GET['dossier'])) {?>
+                            <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><img src="img/ret.png" alt="dossier"></a>
+                            <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?>
+                            </a><br>
 
-                        <div class="bod">
-                            <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><img src="img/ret.png" alt="fichier"></a>
-                            <a href="index.php?dossier=<?=$_GET['dossier']?><?=$dir?>/"><?=$dir?></a><br>
+                        <?php } else {?>
 
-                        </div>
+                            <a href="index.php?dossier=<?=$dir?>/"><img src="img/ret.png" alt="ret"></a>
+                            <a class="doc" href="index.php?dossier=<?=$dir?>/"><?=$dir?>
+                            </a><br>
+
+                        <?php }?>
+
+
 
                     <?php } if( $dir != '.' && $dir != '..') { ?>
 
